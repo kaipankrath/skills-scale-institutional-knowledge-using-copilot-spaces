@@ -10,10 +10,11 @@ Standardize how OctoAcme releases features to production to reduce risk and impr
 
 ## Pre-release requirements
 - All acceptance criteria met and PRs merged
-- Passing CI and security scans
-- Release notes drafted
-- Rollback / mitigation plan documented
-- Smoke tests prepared
+- Passing CI and security scans — **verified by Security Lead**
+- Release notes drafted — **owned by Release Manager**, reviewed by Product Manager
+- Rollback / mitigation plan documented — **owned by Release Manager** in collaboration with Developers
+- Smoke tests prepared — **owned by QA / Developers**
+- Go/no-go decision documented — **facilitated by Release Manager**, requires sign-off from Project Manager, Product Manager, and Security Lead
 
 ## Deployment Checklist
 - [ ] Deployment window scheduled (if needed)
@@ -25,9 +26,10 @@ Standardize how OctoAcme releases features to production to reduce risk and impr
 
 ## Rollback & Incident Playbook
 - If a deployment fails or causes a critical issue:
-  - Trigger incident response and notify on-call
-  - Rollback to last known-good release if necessary
-  - Triage root cause and capture action items
+  - **Release Manager** triggers incident response and notifies on-call
+  - **Release Manager** coordinates rollback to last known-good release if necessary
+  - **Security Lead** assesses whether the incident has a security dimension and invokes the security incident runbook if so
+  - Triage root cause and capture action items (owned by **Project Manager** post-incident)
 
 ## Release Notes Template
 - Release name / number:
@@ -36,3 +38,6 @@ Standardize how OctoAcme releases features to production to reduce risk and impr
 - Notable changes:
 - Migration steps (if any):
 - Known issues:
+
+## Release Readiness Checklist
+For the full role-aligned release readiness checklist, see [`octoacme-release-readiness-checklist.md`](octoacme-release-readiness-checklist.md).
