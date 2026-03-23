@@ -13,6 +13,12 @@ Maintain a simple table with:
 - Mitigation plan
 - Status
 
+**Risk register is maintained by the Project Manager.** Contributors:
+- **Security Lead**: owns security-related risks; must review and update security risk entries at least every sprint.
+- **Scrum Master**: flags process or team-health risks during retrospectives.
+- **Release Manager**: flags deployment and release risks.
+- All team members are encouraged to raise new risks at any time.
+
 ## Risk Lifecycle
 - Identify: during planning and ongoing execution
 - Assess: estimate impact and likelihood
@@ -38,5 +44,5 @@ Incident Communication
 - Post-incident blameless retrospective scheduled
 
 ## Escalation Paths
-- Team-level -> PM -> Product Lead -> Sponsor
-- For security incidents, follow the security incident runbook and notify Security on-call
+- Team-level -> Scrum Master -> PM -> Product Lead -> Sponsor
+- For security incidents: **Security Lead** is notified immediately → follows the security incident runbook → escalates to PM and Sponsor if business impact is confirmed → post-incident review conducted by Security Lead and Project Manager

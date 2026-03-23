@@ -11,10 +11,11 @@ Turn an approved initiative into an actionable plan and backlog for delivery.
 ## Activities
 1. Kickoff meeting with stakeholders and delivery team
 2. Create prioritized backlog with acceptance criteria
-3. Estimate scope (T-shirt sizing or story points)
-4. Define Definition of Done (DoD)
+3. Estimate scope (T-shirt sizing or story points) — **facilitated by Scrum Master**, reviewed by Project Manager
+4. Define Definition of Done (DoD) — **owned by the whole team**, documented by Scrum Master, signed off by Product Manager
 5. Identify dependencies and integration points
-6. Create release plan and milestone map
+6. Create release plan and milestone map — **owned by Release Manager** in collaboration with Project Manager
+7. Cross-functional sign-offs: **UX Designer** reviews user-facing stories; **Security Lead** reviews security-sensitive features
 
 ## Backlog Item Template
 - Title:
@@ -39,5 +40,7 @@ Turn an approved initiative into an actionable plan and backlog for delivery.
 - [ ] Project kickoff held
 - [ ] Backlog prioritized and estimated
 - [ ] Release timeline and milestones agreed
-- [ ] Definition of Done documented
+- [ ] Definition of Done documented and signed off by Product Manager
 - [ ] Initial test plan / QA approach drafted
+- [ ] UX Designer reviewed all user-facing stories
+- [ ] Security Lead reviewed security-sensitive features or architecture decisions
